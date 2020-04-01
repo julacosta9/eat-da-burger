@@ -6,7 +6,7 @@
     {{#each burgers}}
         {{#if devoured}}
             <li>
-                {{burger_name}}
+                {{burger_name}} {{>button_isDevoured devoured=true}}
             </li>
         {{/if}}
     {{/each}}
@@ -18,7 +18,7 @@
     {{#each burgers}}
         {{#unless devoured}}
             <li>
-                {{burger_name}}
+                {{burger_name}} {{>button_isDevoured devoured=false}}
             </li>
         {{/unless}}
     {{/each}}
